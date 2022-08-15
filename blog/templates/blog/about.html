@@ -1,4 +1,26 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-    <h1>It's me</h1>
+{% load static %}
+    <div class="container">
+        <div class="about">
+            <h2>It's me</h2>
+            <div class="about_me">
+                <img src="{% static 'image/my_photo.jpg' %}" width=200 height=200 alt="my_photo" class="bordered_img">
+                <span>
+                    Name: Denets<br>
+                    Surname: Tim<br>
+                    Age: 14 y.o.<br>
+                    Cool: yes
+                </span>
+            </div>
+            <h3>Some links:</h3>
+            <div class="about_links">
+                <ul class="about_links_list">
+                    <li><a href="https://github.com/Denets" class="about_link">Github</a></li>
+                    <li><a href="https://vk.com/denetsik" class="about_link">VK</a></li>
+                    <li><a href="https://steamcommunity.com/id/denets/" class="about_link">Steam</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 {% endblock content %}
