@@ -1,0 +1,61 @@
+/* HTML */
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color:white;
+    margin-right: 8px;
+    opacity: .8;
+
+    transition: .2s color;
+
+    position: relative;
+}
+a:hover{
+    color:yellow;
+}
+a::after{
+    content: "";
+    bottom: -3px;
+    left: 10%;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    opacity: .8;
+    position: absolute;
+
+    transition: .2s color;
+    transition: .3s width;
+}
+a:hover::after{
+    background-color: yellow;
+    width:80%;
+}
+
+/* Header */
+.header{
+    background-color: burlywood;
+    min-height: 50px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    display: flex;
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+    margin: auto;
+    text-align: center;
+}
+.logo{
+    font-size: 24px;
+}
+.nav{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
